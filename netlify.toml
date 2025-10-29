@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"         # Run Angular build (make sure this runs ng build --prod)
+  publish = "dist/your-project-name" # Folder where Angular outputs production files
+  functions = "netlify/functions"   # Optional, use if you have Netlify Functions
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
